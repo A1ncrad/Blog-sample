@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="page" id="page">
+		<header class="header">
+			<div class="header__left">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="index.html" class="nav__link">Главная</a>
+						</li>
+						<li class="nav__item">
+							<a href="" class="nav__link has-subnav">Статьи</a>
+
+							<ul class="subnav">
+								<li>
+									<a href="search.html" class="subnav__link">Создание сайтов</a>
+								</li>
+								<li>
+									<a href="search.html" class="subnav__link">Интернет-маркетинг</a>
+								</li>
+								<li>
+									<a href="search.html" class="subnav__link">Продвижение видео</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="nav__item">
+							<a href="text.html" class="nav__link">Обо мне</a>
+						</li>
+						<li class="nav__item">
+							<a href="text.html" class="nav__link">Реклама</a>
+						</li>
+					</ul>
+				</nav>
+				<button class="burger" type="button" id="sidebarToggle">
+					<span></span>
+				</button>
+			</div>
+			<div class="header__right">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="profile.html" class="nav__link">Профиль</a>
+						</li>
+						<li class="nav__item">
+							<a href="" class="nav__link">Выйти</a>
+						</li>
+					</ul>
+				</nav>
+				<form action="search.html" method="get" class="search">
+					<input type="text" placeholder="Поиск по блогу" class="search__input">
+				</form>
+			</div>
+		</header>
+		<aside class="sidebar" id="sidebar">
+			<div class="sidebar__header">
+				<img src="img/sidebar/header.jpg" alt="">
+			</div>
+			<div class="sidebar__content">
+				<div class="profile">
+					<img class="profile__avatar" src="https://picsum.photos/100/100" alt="avatar">
+					<div class="profile__header">
+						<div class="profile__name">Имя Фамилия</div>
+						<div class="profile__prof">блог front-end разработчика</div>
+					</div>
+
+					<ul class="social">
+						<li class="social__item">
+							<a href="" target="_blank" class="social__link">
+								<img src="img/sidebar/icons/01.svg" alt="">
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="" target="_blank" class="social__link">
+								<img src="img/sidebar/icons/02.svg" alt="">
+							</a>
+						</li>
+						<li class="social__item">
+							<a href="" target="_blank" class="social__link">
+								<img src="img/sidebar/icons/03.svg" alt="">
+							</a>
+						</li>
+					</ul>
+
+					<div class="profile__text">
+						<p>Front-end разработчик. Практик верстки сайтов.
+							Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более
+							10 000 часов в создании
+							сайтов различной сложности.</p>
+					</div>
+				</div>
+				<nav class="nav nav_mobile">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="index.html" class="nav__link">Главная</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link has-subnav" id="subnav">Статьи</a>
+							<ul class="mobile-subnav">
+								<li>
+									<a href="search.html" class="mobile-subnav__link">Создание сайтов</a>
+								</li>
+								<li>
+									<a href="search.html" class="mobile-subnav__link">Интернет-маркетинг</a>
+								</li>
+								<li>
+									<a href="search.html" class="mobile-subnav__link">Продвижение видео</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="nav__item">
+							<a href="text.html" class="nav__link">Обо мне</a>
+						</li>
+						<li class="nav__item">
+							<a href="text.html" class="nav__link">Реклама</a>
+						</li>
+						<li class="nav__item">
+							<a href="profile.html" class="nav__link">Профиль</a>
+						</li>
+						<li class="nav__item">
+							<button class="nav__link">Выйти</button>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="sidebar__footer">
+				<a href="works.html" class="btn btn_red">Мои работы</a>
+				<button class="btn btn_blue" data-modal="contact-modal">Написать мне</button>
+			</div>
+		</aside>
+		<main class="main">
+			<div class="container">
+				<div class="stories">
+					<div class="stories__item" data-modal="story-modal">
+						<img src="img/stories/01.jpg" alt="" class="stories__preview">
+						<div class="stories__title">Отдыхаю на природе</div>
+						<time datetime="21-09-2020" class="stories__date">21.09.2020</time>
+					</div>
+					<div class="stories__item" data-modal="story-modal">
+						<img src="img/stories/02.jpg" alt="" class="stories__preview">
+						<div class="stories__title">Заканчиваю
+							сложный проект</div>
+						<time datetime="15-09-2020" class="stories__date">15.09.2020</time>
+					</div>
+					<div class="stories__item" data-modal="story-modal">
+						<img src="img/stories/03.jpg" alt="" class="stories__preview">
+						<div class="stories__title">Переехал в новую
+							квартиру</div>
+						<time datetime="11-09-2020" class="stories__date">11.09.2020</time>
+					</div>
+					<div class="stories__item" data-modal="story-modal">
+						<img src="img/stories/04.jpg" alt="" class="stories__preview">
+						<div class="stories__title">Осень пришла!</div>
+						<time datetime="28-08-2020" class="stories__date">28.08.2020</time>
+					</div>
+				</div>
+
+				<div class="add-post">
+					<form action="/" method="post" class="add-post__form">
+						<textarea name="post-text" placeholder="Напишите что-нибудь" class="add-post__text" data-autoresize></textarea>
+						<div class="add-post__form-actions">
+							<label for="add-post-file" class="add-post__file">
+								<img src="img/add-post/icons/add-photo.svg" alt="Добавить фото">
+								<input type="file" id="add-post-file">
+							</label>
+							<button type="submit" class="add-post__send">
+								<img src="img/add-post/icons/send.svg" alt="Отправить">
+							</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="post">
+					<div class="post__content">
+						<p class="post__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+							volutpat orci turpis urna. Et vestibulum, posuere
+							tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu
+							sodales lacinia eu auctor
+							nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+					</div>
+					<div class="post__footer">
+						<div class="post__data">
+							<time class="post__date" datetime="21-06-2020">21.06.2020</time>
+						</div>
+					</div>
+				</div>
+
+				<article class="post">
+					<a href="post.html" class="post__header post__header_img">
+						<img class="post__img" src="img/posts/01.jpg" alt="">
+					</a>
+					<div class="post__content">
+						<h2 class="post__title"><a href="post.html">Как писать код быстро и безболезненно?</a></h2>
+						<p class="post__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+							volutpat orci turpis urna. Et vestibulum, posuere
+							tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu
+							sodales lacinia eu auctor
+							nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+					</div>
+					<div class="post__footer">
+						<div class="post__data">
+							<time class="post__date" datetime="21-06-2020">21.06.2020</time>
+							<a href="search.html" class="post__label">создание сайтов</a>
+						</div>
+						<a href="post.html" class="post__link">читать</a>
+					</div>
+				</article>
+
+				<article class="post">
+					<div class="post__header">
+						<div class="embed">
+							<video src="" poster="https://picsum.photos/550/310"></video>
+						</div>
+					</div>
+					<div class="post__content">
+						<h2 class="post__title"><a href="post.html">Купил новый ноутбук за 150 000 руб</a></h2>
+					</div>
+					<div class="post__footer">
+						<div class="post__data">
+							<time class="post__date" datetime="21-06-2020">21.06.2020</time>
+							<a href="search.html" class="post__label">продвижение видео</a>
+						</div>
+						<a href="post.html#add-comment" class="post__link">оставить комментарий</a>
+					</div>
+				</article>
+
+				<article class="post">
+					<a href="post.html" class="post__header post__header_img">
+						<img class="post__img" src="img/posts/02.jpg" alt="">
+					</a>
+					<div class="post__content">
+						<h2 class="post__title"><a href="post.html">Как я сходил на FrontEnd Conf 2021</a></h2>
+						<p class="post__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+							volutpat orci turpis urna. Et vestibulum, posuere
+							tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu
+							sodales lacinia eu auctor
+							nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
+					</div>
+					<div class="post__footer">
+						<div class="post__data">
+							<time class="post__date" datetime="21-06-2020">21.06.2020</time>
+							<a href="search.html" class="post__label">создание сайтов</a>
+						</div>
+						<a href="post.html" class="post__link">читать</a>
+					</div>
+				</article>
+
+				<ul class="pagination">
+					<li class="pagination__item">
+						<a class="pagination__link" href="#">&lt;</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link" href="#1">1</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link pagination__link_active" href="#2">2</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link" href="#3">3</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link" href="#">&gt;</a>
+					</li>
+				</ul>
+			</div>
+		</main>
+	</div>
+
+	<div class="modal" id="contact-modal">
+		<div class="modal__content modal__content_bottom">
+			<button class="modal__close-btn">
+				<img src="img/modal/close-icon.svg" alt="close">
+			</button>
+			<form action="" class="form" method="post">
+				<div class="form__group form__group_md">
+					<input type="text" class="form__control" value="Имя Фамилия" disabled>
+					<span class="form__line"></span>
+				</div>
+				<div class="form__group form__group_md">
+					<input type="email" class="form__control" placeholder="Ваш e-mail" required>
+					<span class="form__line"></span>
+				</div>
+				<div class="form__group form__group_md">
+					<textarea class="form__control form__control_textarea" placeholder="Текст сообщения"
+						required data-autoresize maxlength="500"></textarea>
+					<span class="form__line"></span>
+				</div>
+				<button type="submit" class="form__btn">Отправить</button>
+				<div class="form__footer form__footer_center">
+					<ul class="form__links">
+						<li>
+							e-mail: <a href="mailto:info@mywebsite.ru" class="form__link">example@gmail.com</a>
+						</li>
+						<li>
+							тел: <a href="tel:94323285622" class="form__link">+943-232-856-22</a>
+						</li>
+					</ul>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="modal" id="story-modal">
+		<div class="modal__content modal__content_story">
+			<video src="" class="modal__video" poster="https://picsum.photos/420/580"></video>
+		</div>
+	</div>
+
+	<script src="js/modal.js"></script>
+	<script src="js/textarea.js"></script>
+	<script src="js/mobileNav.js"></script>
+</body>
+
+</html>

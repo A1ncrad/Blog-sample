@@ -1,0 +1,23 @@
+.btn {
+	padding: 1.15em 2.1em;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 1.2rem;
+	font-weight: 500;
+	font-family: inherit;
+	color: $white;
+	line-height: 1.1;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	border-radius: 3em;
+	transition: background-color .3s linear;
+
+	&_red {
+		@include btn($red)
+	}
+
+	&_blue {
+		@include btn($blue)
+	}
+}

@@ -1,0 +1,20 @@
+.social {
+	display: flex;
+	justify-content: center;
+
+	&:not(:last-child) {
+		margin: 0px 0px 3rem 0px;
+	}
+
+	&__item:not(:last-child) {
+		margin: 0px 1.5rem 0px 0px;
+	}
+
+	@include breakpoint($tablet-bp) {
+		display: none;
+
+		&.social_modal{
+			display: flex;
+		}
+	}
+}

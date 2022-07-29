@@ -1,0 +1,52 @@
+@import "vendor/reset";
+@import "vars";
+@import "mixins";
+@import "https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300;400;500&display=swap";
+
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: #181818;
+	font-family: Roboto;
+	font-size: 1.4rem;
+	color: $white;
+	line-height: 1.5;
+
+	&.no-scroll {
+		overflow: hidden;
+	}
+
+	@include breakpoint($tablet-bp){
+		&.show-sidebar{
+			overflow: hidden;
+		}
+	}
+}
+
+// Blocks
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/burger";
+@import "blocks/subnav";
+@import "blocks/search";
+@import "blocks/sidebar";
+@import "blocks/profile";
+@import "blocks/social";
+@import "blocks/btn";
+@import "blocks/main";
+@import "blocks/container";
+@import "blocks/stories";
+@import "blocks/add-post";
+@import "blocks/post";
+@import "blocks/related";
+@import "blocks/comments";
+@import "blocks/form";
+@import "blocks/embed";
+@import "blocks/pagination";
+@import "blocks/work";
+@import "blocks/form-profile";
+@import "blocks/modal";

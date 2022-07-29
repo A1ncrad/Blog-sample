@@ -1,0 +1,86 @@
+.modal {
+	display: none;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: $z-index-modal;
+	height: 100%;
+	width: 100%;
+	background-color: rgba($black, .8);
+	padding: 1rem;
+	cursor: pointer;
+
+	&>* {
+		cursor: initial;
+	}
+
+	&.show {
+		display: flex;
+	}
+}
+
+.modal__content {
+	overflow: auto;
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+	padding: 8rem;
+	background-color: $primary;
+	border-radius: 5px;
+	transform: translateY(-50px);
+	transition: .3s ease-in-out;
+	opacity: 0;
+
+	&_story {
+		background: none;
+		padding: 0;
+	}
+
+	&_bottom {
+		padding-bottom: 2.5rem;
+	}
+
+	@include breakpoint($tablet-bp) {
+		padding: 6rem 5rem 2.5rem;
+
+		&_share {
+			padding: 5rem 3rem;
+		}
+	}
+
+	@include breakpoint($mobile-bp) {
+		padding: 5rem 3rem 3rem;
+
+		&_share {
+			padding: 5rem 3rem;
+		}
+	}
+}
+
+.modal__close-btn {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	opacity: .5;
+	transition: .3s linear;
+
+	&:hover {
+		transform: rotate(90deg);
+		opacity: 1;
+	}
+
+	@include breakpoint($tablet-bp) {
+		transition: none;
+	}
+}
+
+.modal__video {
+	display: block;
+	margin: 0px auto;
+}
